@@ -1,0 +1,286 @@
+/***************
+/* || HEADER */
+
+.header {
+    height: 8.8rem;
+    background-color: #1A1E1F;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8.3rem;
+   
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-logo a {
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo {
+    height: 6rem;
+
+}
+
+/***************
+/* || NAVIGATION */
+
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+}
+
+.main-nav-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.main-nav-link a:hover {
+    color: #0E81C1;
+}
+
+.transparent {
+    background-color: rgba(26, 30, 31, 0.9);
+
+}
+
+/***************
+/* || hero */
+
+
+
+.main {
+    position: relative;
+
+}
+
+.main img {
+    display: block;
+    width: 100%;
+}
+
+
+.text-overlay {
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    transform: translateY(-25%);
+
+}
+
+.text-overlay span {
+    padding-bottom: 10rem;
+
+}
+
+
+/***************
+/* || about */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+    background-color: #2b2b2b;
+
+
+}
+
+
+.about p {
+
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+    font-size: 2.8rem;
+    font-weight: bolder;
+   
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #0E81C1;
+    font-weight: bold;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.about a:hover {
+
+    color: #7D7D7A;
+
+
+}
+
+/***************
+/* ||  cards */
+
+.title {
+
+    background-color: #161616;
+    /* height: 10rem; */
+    padding: 5rem 0;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+
+}
+
+
+
+
+.card-container {
+    /* padding: 0 44rem 0 44rem; */
+    background-color: #161616;
+
+
+}
+
+.card-container .container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(3, auto);
+
+    gap: 3rem;
+}
+
+.card {
+    position: relative;
+    min-height: 40rem;
+    border-radius: 11px;
+    max-width: 30rem;
+    overflow: hidden;
+    border: 2px solid #555555;
+    background-color: #161616;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-content {
+    margin: 25px 0 0 25px;
+
+}
+
+
+.card-content h3 {
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.card-content p {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.card-action {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.card-action p,
+a {
+    text-decoration: none;
+    color: #0E81C1;
+    font-size: 1.5rem;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.card-action a:hover {
+    color: #0e82c1c7;
+
+}
+
+/* || slider */
+
+.slider {
+    background-color: #2b2b2b;
+    min-height: 250px;
+}
+
+/* ||  collapsible*/
+
+.collapsible-title {
+    background-color: #161616;
+    color: white;
+    padding: 5rem 0
+}
+
+.collapsible-title .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+
+
+.collapsible-container {
+    background-color: #161616;
+}
+
+.collapsible {
+    background-color: #161616;
+    border-bottom: 2px solid #555555;
+    color: white;
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+
+}
+
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
